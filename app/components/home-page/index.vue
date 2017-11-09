@@ -5,7 +5,7 @@
         </header>
         <img :class="homePage.me" src="./me.jpg"/>
         <h1>Веб разработчик</h1>
-        <ul>
+        <ul :class="homePage.links">
             <li v-for="link in links">
                 <a :href="link">{{link}}</a>
             </li>

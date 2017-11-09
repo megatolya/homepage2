@@ -11,3 +11,6 @@ docker build \
     --label maintainer="$author" \
     -t $docker_project_name:$build_number \
     .
+
+docker tag $docker_project_name:$build_number megatolya/$docker_project_name:$build_number
+docker push megatolya/$docker_project_name:$build_number

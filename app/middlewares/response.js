@@ -35,6 +35,7 @@ module.exports = function (req, res) {
         requestId: req.state.common.requestId,
         xhr: req.xhr
     });
+    req.logger.log('request headers:', JSON.stringify(req.headers));
 
     if (req.xhr) {
         res.json(req.state);

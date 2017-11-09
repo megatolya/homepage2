@@ -1,6 +1,6 @@
 {
   "author": "Anatoly Ostrovsky <megatolya@yandex-team.ru>",
-  "name": "vue-boilerplate",
+  "name": "homepage",
   "version": "1.0.0",
   "dependencies": {
     "autoprefixer": "6.3.6",
