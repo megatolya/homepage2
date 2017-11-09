@@ -7,5 +7,7 @@ assert(process.env.APP_SECRET);
 module.exports = {
     xhrBasePath: '',
     secret: Math.random(),
-    port: 80
+    port: 80,
+    host: 'localhost',
+    redirectToHttps: false
 };

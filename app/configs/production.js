@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = {
-    // your cdn base url
-    staticPath: ''
+    redirectToHttps: true,
+    host: 'tolya.me'
 };
