@@ -3,7 +3,7 @@
 require('babel-polyfill');
 
 import createApp from './create-app'; // eslint-disable-line
-const metrika = require(./metrika');
+const metrika = require('./metrika');
 
 const logState = require('./log-state');
 
