@@ -3,6 +3,7 @@
 require('babel-polyfill');
 
 import createApp from './create-app'; // eslint-disable-line
+const metrika = require(./metrika');
 
 const logState = require('./log-state');
 
@@ -27,6 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const state = JSON.parse(document.querySelector('#initial-state').innerHTML);
 
     createApp(state, {el: '#app'});
-
     logState(state);
+    setTimeout(() => metrika.init(), 0);
 });
