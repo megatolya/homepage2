@@ -22,7 +22,7 @@ app.disable('etag');
 app.enable('trust proxy');
 require('./utils/app-extensions')(app);
 
-app.use('/', serveStatic(path.resolve(__dirname, '..', 'dist')));
+app.use(serveStatic(path.resolve(__dirname, '..', 'dist')));
 app.use(fileNotFound);
 app.use(redirectToHttps);
 
