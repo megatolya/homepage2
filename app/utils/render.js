@@ -22,11 +22,7 @@ const styles = fs.readFileSync(path.resolve(
     isProduction
         ? 'all.vue.min.css'
         : 'all.vue.css'
-), {encoding: 'utf8'})
-    .replace(
-        /(url\()(assets\/)/g,
-        `$1${config.staticPath}/dist/$2`
-    );
+), {encoding: 'utf8'});
 
 glob('app/layouts/*.html', (ex, files) => {
     files.forEach((file) => {

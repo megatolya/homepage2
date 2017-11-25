@@ -1,6 +1,5 @@
 'use strict';
 
 module.exports = {
-    port: process.env.PORT || 3000,
-    staticPath: ''
+    port: process.env.PORT || 3002
 };
