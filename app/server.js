@@ -9,6 +9,7 @@ require('https').globalAgent.maxSockets = 1024;
 require('events').defaultMaxListeners = 1024;
 
 const express = require('express');
+const compression = require('compression');
 
 const config = require('./config');
 const serveStatic = require('serve-static');
@@ -22,6 +23,7 @@ app.disable('etag');
 app.enable('trust proxy');
 require('./utils/app-extensions')(app);
 
+app.use(compression());
 app.use(serveStatic(path.resolve(__dirname, '..', 'dist')));
 app.use(fileNotFound);
 app.use(redirectToHttps);

@@ -27,7 +27,7 @@ if (process.env.NODE_ENV !== 'production') {
 document.addEventListener('DOMContentLoaded', () => {
     const state = JSON.parse(document.querySelector('#initial-state').innerHTML);
 
-    createApp(state, {el: '#app'});
+    createApp(state, {el: '.app-container'});
     logState(state);
     setTimeout(() => metrika.init(), 0);
 });

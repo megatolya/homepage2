@@ -33,3 +33,4 @@ const metrika = {
     }
 };
 
+module.exports = metrika;
